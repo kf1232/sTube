@@ -1,7 +1,7 @@
-import './App.css';
+import './upload.css';
 import React, {useState} from 'react'
 
-function App() {
+function Upload() {
     const [selectedFile, setSelectedFile] = useState();
     const [isFilePicked, setIsFilePicked] = useState(false)
 
@@ -13,7 +13,8 @@ function App() {
     const handleSubmission = () => { };
 
     return (
-        <div className="App">
+        <div className="Upload">
+
             <input type="file" name="file" onChange={changeHandler}/>
             <button onClick={handleSubmission}>Submit</button>
 
@@ -34,4 +35,4 @@ function App() {
     );
 }
 
-export default App;
+export default Upload;
